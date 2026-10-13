@@ -27,7 +27,6 @@ df = pd.DataFrame({
 })
 
 # Hiển thị bảng dữ liệu 
-display(df)
 
 # #2. Tính điểm tổng kết 
 
@@ -37,7 +36,6 @@ df["Tong_ket"] = (
     + df["cuoi_ki"] * 0.5
 )
 
-display(df)
 
 # #3.Xếp loại sinh viên 
 
@@ -53,7 +51,7 @@ def xep_loai(diem):
 
 df["xep_loai"] = df["Tong_ket"].apply(xep_loai)
 
-display(df)
+
 
 # #4 + #5. Thống kê và trực quan hóa 
 
